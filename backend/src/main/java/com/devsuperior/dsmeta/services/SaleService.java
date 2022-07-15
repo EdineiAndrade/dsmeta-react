@@ -24,8 +24,9 @@ public class SaleService {
 		
 		LocalDate today = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
 		
-		LocalDate min = maxDate.equals("") ? today.minusDays(365) : LocalDate.parse(maxDate);
-		LocalDate max = minDate.equals("") ? today : LocalDate.parse(minDate);
+		LocalDate min = minDate.equals("") ? today : LocalDate.parse(minDate);
+		LocalDate  max = maxDate.equals("") ? today.minusDays(365) : LocalDate.parse(maxDate);
+		
 		
 		return repository.findSales(min, max, pageable);
 	}
