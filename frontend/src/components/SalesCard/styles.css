@@ -5,12 +5,25 @@
 }
 .dsmeta-sales-title {
   color: #676fff;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin: 20px 50px 20px;
+}
+.dsmeta-form-control-container-principal {
+  display: flex;
+  justify-content: flex-start;
 }
 .dsmeta-form-control-container {
-  margin-bottom: 16px;
+  margin: 5px 16px 10px 5px;
   max-width: 300px;
+}
+.dsmeta-dt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dsmeta-form-control-container strong {
+  margin: 5px;
+  padding: ;
 }
 .dsmeta-form-control {
   width: 100%;
@@ -49,6 +62,7 @@
 .dsmeta-sales-table tbody tr:nth-child(odd) {
   background-color: #242c3b;
 }
+
 .dsmeta-red-btn-container {
   display: flex;
   justify-content: center;
@@ -72,9 +86,19 @@
   .dsmeta-sales-table tbody {
     font-size: 18px;
   }
+  .dsmeta-sales-title {
+    color: #676fff;
+    font-size: 22px;
+    margin: 20px 100px 20px;
+  }
 }
 @media (min-width: 992px) {
   .show992 {
     display: table-cell;
+  }
+  .dsmeta-sales-title {
+    color: #676fff;
+    font-size: 24px;
+    margin: 20px 150px 20px;
   }
 }
