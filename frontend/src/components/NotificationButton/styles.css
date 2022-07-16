@@ -12,3 +12,20 @@
 .dsmeta-red-btn img {
   width: 19px;
 }
+.dsmeta-red-btn :hover {
+  height: 47px;
+  width: 47px;
+  background: rgba(9, 167, 224, 0.5);
+  border: 1px solid #09a7e0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  transition-duration: all 1s;
+}
+.dsmeta-red-btn img:hover {
+  width: 45px;
+  transition-duration: all 1s;
+}
